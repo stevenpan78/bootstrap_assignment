@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>board question improved</title>
+  <style type="text/css">
+    #centering{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+	
+<div class="container" id="centering">
+  <div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&minus;</a>
+  </div>
+  <div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&minus;</a>
+  </div>
+  <div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&minus;</a>
+  </div>
+  <div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&minus;</a>
+  </div>
+  <div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&minus;</a>
+  </div>
+</div>
+
+<script>
+  var vowels = ['a','e','i','o','u'];
+  var litag = document.getElementsByClassName("alert");
+  for(var i=0; i<litag.length; i++){
+  	litag[i].firstChild.nodeValue = vowels[i];
+    if(i%2==0) litag[i].style.backgroundColor="darkskyblue";
+    else litag[i].style.backgroundColor="lime";
+  }
+</script>
+</body>
+</html>
